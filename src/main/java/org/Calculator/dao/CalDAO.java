@@ -2,18 +2,55 @@ package org.Calculator.dao;
 
 import org.Calculator.dto.Operator;
 
-public class CalDAO {
+public interface CalDAO {
 
-    //These objects will hold the infomation needed to run the app
+    /**Set the current input string
+     * @param newString new input string
+     */
+    public void setCurrentInputStr(String newString);
 
-    /** The running total, this will be show when the '=' is pressed or before any current input is inputted */
-    double runningTotal;
-    /** The current input, this is a string until a normal operator is chosen, then will be parsed into a double*/
-    String currentInputStr;
-    double currentInputDou;
-    /** the current operator, this will take be performed on the running total and the current input
-     *  when '=' or another operator is pressed */
-    Operator currentOperator;
+    /**Adds a digit to the current inputStr
+     * @param newDigit the new digit to add
+     */
+    public void addToCurrentInputStr(String newDigit);
+
+    /**Parse the current inputStr to a double
+     */
+    public void parseCurrentInputToDouble();
+
+    /**Gets the current input as a double
+     * @return current input
+     */
+    public double getCurrentInputDouble();
+
+    /**Checks if the current input is void
+     * @return true if void
+     */
+    public boolean isCurrentInputVoid();
+
+    /** get the running total as a double
+     * @return the current running total
+     */
+    public double getRunningTotal();
+
+    /**
+     * Set the running total to a new total
+     * @param newTotal the new running total
+     */
+    public void setRunningTotal(double newTotal);
+
+    /**Sets a new current Operator
+     * @param name the new Current operator
+     */
+    public void setNewOperator(Operator name);
+
+    /** get the current operator
+     * @return the current operator
+     */
+    public Operator getCurrentOperator();
+
+
+
 
 
 
