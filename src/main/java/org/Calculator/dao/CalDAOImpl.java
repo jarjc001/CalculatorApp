@@ -1,7 +1,9 @@
 package org.Calculator.dao;
 
 import org.Calculator.dto.Operator;
+import org.springframework.stereotype.Repository;
 
+@Repository
 public class CalDAOImpl implements CalDAO {
 
     //These objects will hold the infomation needed to run the app

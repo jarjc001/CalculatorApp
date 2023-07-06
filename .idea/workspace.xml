@@ -4,11 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f7485c5f-2683-48f3-8393-60b75014208b" name="Changes" comment="Basic layout done">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/Calculator/dao/CalDAOImpl.java" afterDir="false" />
+    <list default="true" id="f7485c5f-2683-48f3-8393-60b75014208b" name="Changes" comment="DAO interface created&#10;Created an enum for Operators">
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/Calculator/dao/CalDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/Calculator/dao/CalDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/Calculator/dto/Operator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/Calculator/dto/Operator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/Calculator/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/Calculator/App.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/Calculator/controller/CalController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/Calculator/controller/CalController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/Calculator/dao/CalDAOImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/Calculator/dao/CalDAOImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/Calculator/service/CalServiceNormal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/Calculator/service/CalServiceNormal.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/Calculator/service/CalServiceSpeical.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/Calculator/service/CalServiceSpeical.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,7 +54,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "last_opened_file_path": "C:/Users/theon/Documents/Important_fouders/Wiley Edge Training/week 2 intermediate/Enums"
+    "last_opened_file_path": "C:/Users/theon/Downloads/demo(1)/demo"
   }
 }]]></component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -69,11 +73,19 @@
       <option name="project" value="LOCAL" />
       <updated>1688430821139</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="DAO interface created&#10;Created an enum for Operators">
+      <created>1688683908463</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1688683908463</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Basic layout done" />
-    <option name="LAST_COMMIT_MESSAGE" value="Basic layout done" />
+    <MESSAGE value="DAO interface created&#10;Created an enum for Operators" />
+    <option name="LAST_COMMIT_MESSAGE" value="DAO interface created&#10;Created an enum for Operators" />
   </component>
 </project>
