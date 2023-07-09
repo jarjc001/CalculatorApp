@@ -1,27 +1,30 @@
 package org.Calculator.dao;
 
+import org.Calculator.dto.CurrentInput;
+import org.Calculator.dto.CurrentInputError;
 import org.Calculator.dto.Operator;
 
 public interface CalDAO {
 
-    /**Set the current input string
+    /**Set the current input with string
      * @param newString new input string
      */
-    public void setCurrentInputStr(String newString);
+    public void setCurrentInput(String newString);
 
     /**Adds a digit to the current inputStr
      * @param newDigit the new digit to add
      */
-    public void addToCurrentInputStr(String newDigit);
+    public void addToCurrentInput(String newDigit);
 
-    /**Parse the current inputStr to a double
+    /**Process the current input to be usable as a double
+     * @throws CurrentInputError if the current input is not in number format
      */
-    public void parseCurrentInputToDouble();
+    public void processCurrentInput() throws CurrentInputError;
 
     /**Gets the current input as a double
      * @return current input
      */
-    public double getCurrentInputDouble();
+    public CurrentInput getCurrentInput();
 
     /**Checks if the current input is void
      * @return true if void
@@ -48,11 +51,6 @@ public interface CalDAO {
      * @return the current operator
      */
     public Operator getCurrentOperator();
-
-
-
-
-
 
 
 }

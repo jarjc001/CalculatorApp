@@ -1,5 +1,7 @@
 package org.Calculator.dao;
 
+import org.Calculator.dto.CurrentInput;
+import org.Calculator.dto.CurrentInputError;
 import org.Calculator.dto.Operator;
 import org.springframework.stereotype.Repository;
 
@@ -15,57 +17,57 @@ public class CalDAOImpl implements CalDAO {
     /**
      * The current input, this is a string until a normal operator is chosen, then will be parsed into a double
      */
-    private String currentInputStr;
-    private double currentInputDou;
+    private CurrentInput currentInput;
+
     /**
      * the current operator, this will take be performed on the running total and the current input
      * when '=' or another operator is pressed
      */
     private Operator currentOperator;
 
-
     @Override
-    public void setCurrentInputStr(String newString) {
-
+    public CurrentInput getCurrentInput() {
+        return currentInput;
+    }
+    @Override
+    public void addToCurrentInput(String newDigit) {
+        currentInput.setInputStr(currentInput.getInputStr()+newDigit);
     }
 
     @Override
-    public void addToCurrentInputStr(String newDigit) {
-
+    public void setCurrentInput(String newString) {
+        currentInput.setInputStr(newString);
     }
 
     @Override
-    public void parseCurrentInputToDouble() {
-
+    public void processCurrentInput() throws CurrentInputError {
+        currentInput.parseCurrentInputToDouble();
     }
 
-    @Override
-    public double getCurrentInputDouble() {
-        return 0;
-    }
 
     @Override
     public boolean isCurrentInputVoid() {
-        return false;
+        return currentInput.getInputStr().equals("");
     }
 
     @Override
     public double getRunningTotal() {
-        return 0;
+        return runningTotal;
     }
 
     @Override
     public void setRunningTotal(double newTotal) {
+        runningTotal = newTotal;
 
     }
 
     @Override
     public void setNewOperator(Operator name) {
-
+        currentOperator = name;
     }
 
     @Override
     public Operator getCurrentOperator() {
-        return null;
+        return currentOperator;
     }
 }
