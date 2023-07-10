@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Calculator</title>
+
+    <style>
+
+
+        .calculator {
+
+
+            border-radius: 10px;
+            box-shadow: 0 8px 50px -7px black;
+
+            margin-inline-start: auto;
+            margin-inline-end: auto;
+            margin-block-start: 2em;
+            max-inline-size: 22rem;
+
+            overflow: hidden;
+
+            background: #3A4655;
+
+        }
+
+        .calculator__output {
+            font-size: 2.5rem;
+            padding-block-start: 3rem;
+            padding-block-end: 0.5rem;
+            padding-inline-end: 1.0rem;
+            text-align: end;
+            color: #33ffbb;
+
+        }
+
+        .calculator__keys {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-gap: 1px;
+            background: #3C4857;
+
+
+
+
+        }
+
+        .calculator__key {
+            border: none;
+            padding-block-start: 1rem;
+            padding-block-end: 1rem;
+            padding-inline-start: 1.25rem;
+            padding-inline-end: 1.25rem;
+            font-size: 1.3rem;
+            color: #fff;
+
+
+        }
+
+
+
+        .calculator__key:focus {
+
+          box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.3) inset;
+          background: #33ffbb;
+
+          outline: none;
+
+        }
+
+
+        .calculator__key--operator {
+
+            background:#425062;
+
+        }
+
+        .calculator__key--operator:active {
+
+            background:  #677281;
+
+        }
+
+        .calculator__key--number {
+            background: #677281;
+        }
+        .calculator__key--number:active {
+
+            background:  #425062;
+
+        }
+
+
+
+        }
+
+
+
+
+
+
+
+
+    </style>
+
+
+</head>
+<body>
+
+<div class="calculator">
+
+    <div class="calculator__output">0</div>
+
+    <div class="calculator__keys">
+
+        <button class="calculator__key calculator__key--operator">AC</button>
+
+        <button class="calculator__key calculator__key--operator">x²</button>
+
+        <button class="calculator__key calculator__key--operator">√</button>
+
+        <button class="calculator__key calculator__key--operator">÷</button>
+
+        <button href="login" class="calculator__key calculator__key--number">7</button>
+
+        <button class="calculator__key calculator__key--number">8</button>
+
+        <button class="calculator__key calculator__key--number">9</button>
+
+        <button class="calculator__key calculator__key--operator">&times;</button>
+
+        <button class="calculator__key calculator__key--number">4</button>
+
+        <button class="calculator__key calculator__key--number">5</button>
+
+        <button class="calculator__key calculator__key--number">6</button>
+
+        <button class="calculator__key calculator__key--operator">-</button>
+
+        <button class="calculator__key calculator__key--number">1</button>
+
+        <button class="calculator__key calculator__key--number">2</button>
+
+        <button class="calculator__key calculator__key--number">3</button>
+
+        <button class="calculator__key calculator__key--operator">+</button>
+
+        <button class="calculator__key calculator__key--number">.</button>
+
+        <button class="calculator__key calculator__key--number">0</button>
+
+        <button class="calculator__key calculator__key--operator">%</button>
+
+        <button class="calculator__key calculator__key--operator">=</button>
+
+
+    </div>
+
+</div>
+
+
+</body>
+</html>
