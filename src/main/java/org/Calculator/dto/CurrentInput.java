@@ -2,15 +2,19 @@ package org.Calculator.dto;
 
 import java.util.Objects;
 
+/**
+ * Used for inputs
+ */
 public class CurrentInput {
 
 
     private String inputStr;
 
-    private double inputDou;
+    private Double inputDou;
 
     public CurrentInput() {
         this.inputStr = "";
+        this.inputDou = (double) 0;
     }
 
     public void setInputStr(String inputStr) {

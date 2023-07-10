@@ -2,6 +2,7 @@ package org.Calculator.dao;
 
 import org.Calculator.dto.CurrentInput;
 import org.Calculator.dto.CurrentInputError;
+import org.Calculator.dto.CurrentOutput;
 import org.Calculator.dto.Operator;
 import org.springframework.stereotype.Repository;
 
@@ -13,17 +14,17 @@ public class CalDAOImpl implements CalDAO {
     /**
      * The running total, this will be show when the '=' is pressed or before any current input is inputted
      */
-    private double runningTotal;
+    private CurrentOutput runningTotal = new CurrentOutput();
     /**
      * The current input, this is a string until a normal operator is chosen, then will be parsed into a double
      */
-    private CurrentInput currentInput;
+    private CurrentInput currentInput = new CurrentInput();
 
     /**
      * the current operator, this will take be performed on the running total and the current input
      * when '=' or another operator is pressed
      */
-    private Operator currentOperator;
+    private Operator currentOperator = Operator.NOTHING;
 
     @Override
     public CurrentInput getCurrentInput() {
@@ -42,6 +43,7 @@ public class CalDAOImpl implements CalDAO {
     @Override
     public void processCurrentInput() throws CurrentInputError {
         currentInput.parseCurrentInputToDouble();
+        currentInput.setInputStr("");
     }
 
 
@@ -51,14 +53,19 @@ public class CalDAOImpl implements CalDAO {
     }
 
     @Override
-    public double getRunningTotal() {
+    public CurrentOutput getRunningTotal() {
         return runningTotal;
     }
 
     @Override
     public void setRunningTotal(double newTotal) {
-        runningTotal = newTotal;
+        runningTotal.setOutputDou(newTotal);
 
+    }
+
+    @Override
+    public void processRunningTotal() {
+        runningTotal.parseCurrentOutputToStr();
     }
 
     @Override

@@ -2,6 +2,7 @@ package org.Calculator.dao;
 
 import org.Calculator.dto.CurrentInput;
 import org.Calculator.dto.CurrentInputError;
+import org.Calculator.dto.CurrentOutput;
 import org.Calculator.dto.Operator;
 
 public interface CalDAO {
@@ -16,7 +17,7 @@ public interface CalDAO {
      */
     public void addToCurrentInput(String newDigit);
 
-    /**Process the current input to be usable as a double
+    /**Process the current input to be usable as a double, then clears the input string
      * @throws CurrentInputError if the current input is not in number format
      */
     public void processCurrentInput() throws CurrentInputError;
@@ -31,16 +32,23 @@ public interface CalDAO {
      */
     public boolean isCurrentInputVoid();
 
-    /** get the running total as a double
+    /**
+     * get the running total as a double
+     *
      * @return the current running total
      */
-    public double getRunningTotal();
+    public CurrentOutput getRunningTotal();
 
     /**
      * Set the running total to a new total
      * @param newTotal the new running total
      */
     public void setRunningTotal(double newTotal);
+
+    /**Process the current total to be usable as a String
+     */
+    public void processRunningTotal();
+
 
     /**Sets a new current Operator
      * @param name the new Current operator

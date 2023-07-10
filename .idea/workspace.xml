@@ -4,10 +4,21 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f7485c5f-2683-48f3-8393-60b75014208b" name="Changes" comment="Added spring">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/Calculator/dto/CurrentInputError.java" afterDir="false" />
+    <list default="true" id="f7485c5f-2683-48f3-8393-60b75014208b" name="Changes" comment="finished dao impl">
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/Calculator/dto/CurrentOutput.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/Calculator/service/CalServiceBasicOp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/Calculator/service/CalServiceBasicOpImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/Calculator/service/CalServiceInputOutput.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/Calculator/service/CalServiceInputOutputImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/Calculator/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/Calculator/App.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/Calculator/controller/CalController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/Calculator/controller/CalController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/Calculator/dao/CalDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/Calculator/dao/CalDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/Calculator/dao/CalDAOImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/Calculator/dao/CalDAOImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/Calculator/dto/CurrentInput.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/Calculator/dto/CurrentInput.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/Calculator/dto/Operator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/Calculator/dto/Operator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/Calculator/service/CalServiceNormal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/Calculator/service/CalServiceSpeicalImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/Calculator/service/CalServiceSpeical.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/Calculator/service/CalServiceSpeical.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -17,8 +28,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Interface" />
         <option value="Enum" />
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -60,6 +71,26 @@
       <recent name="C:\Users\theon\Documents\Important_fouders\Java\Calculator\src\main\resources" />
     </key>
   </component>
+  <component name="RunManager">
+    <configuration name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.Calculator.App" />
+      <module name="Calculator" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.Calculator.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.App" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -90,13 +121,21 @@
       <option name="project" value="LOCAL" />
       <updated>1688685587451</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="finished dao impl">
+      <created>1688943152273</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1688943152273</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Basic layout done" />
     <MESSAGE value="DAO interface created&#10;Created an enum for Operators" />
     <MESSAGE value="Added spring" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added spring" />
+    <MESSAGE value="finished dao impl" />
+    <option name="LAST_COMMIT_MESSAGE" value="finished dao impl" />
   </component>
 </project>
