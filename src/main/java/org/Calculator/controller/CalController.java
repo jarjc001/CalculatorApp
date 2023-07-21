@@ -66,13 +66,11 @@ public class CalController {
     public String operatorButton(Model model , HttpServletRequest request){
         String operator = request.getParameter("operator");
         inputOutput.completeEquals();
-        switch (operator){
-            case "plus":
-                basicOp.plus();
-                break;
-            case "minus":
-                basicOp.minus();
-                break;
+        switch (operator) {
+            case "plus" -> basicOp.plus();
+            case "minus" -> basicOp.minus();
+            case "multiply" -> basicOp.multiply();
+            case "divide" -> basicOp.divide();
         }
 
 

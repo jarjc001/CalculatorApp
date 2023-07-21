@@ -30,11 +30,11 @@ public class CalServiceBasicOperatorsImpl implements CalServiceBasicOperators {
 
     @Override
     public void divide() {
-        if(dao.isCurrentInputVoid()) {
-           inputOutput.getErrorMessage();
-        }else {
+//        if(dao.isCurrentInputVoid()) {
+//           inputOutput.getErrorMessage();
+//        }else {
             dao.setNewOperator(Operator.DIVIDE);
-        }
+//        }
 
     }
 }
