@@ -48,6 +48,11 @@ public class CalServiceInputOutputImpl implements CalServiceInputOutput{
     }
 
     @Override
+    public void positiveNegative(){
+        dao.positiveNegativeInput();
+    }
+
+    @Override
     public void completeEquals() {
         try{
             // to check if the is an error in input

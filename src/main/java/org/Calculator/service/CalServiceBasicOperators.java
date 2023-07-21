@@ -14,7 +14,6 @@ public interface CalServiceBasicOperators {
     public void plus();
 
     /**Sets the new operator as minus
-     * If the current input is null, will add a minus to the current input instead
      */
     public void minus();
 

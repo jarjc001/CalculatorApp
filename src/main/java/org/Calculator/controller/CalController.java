@@ -54,14 +54,32 @@ public class CalController {
 
     }
 
-    //add
+    @PostMapping("changeSign")
+    public String changeSignButton(Model model){
+        inputOutput.positiveNegative();
+        return  displayCalScreen(model);
+    }
 
-    @PostMapping("add")
-    public String addButton(Model model){
+
+
+    @PostMapping("operator")
+    public String operatorButton(Model model , HttpServletRequest request){
+        String operator = request.getParameter("operator");
         inputOutput.completeEquals();
-        basicOp.plus();
+        switch (operator){
+            case "plus":
+                basicOp.plus();
+                break;
+            case "minus":
+                basicOp.minus();
+                break;
+        }
+
+
         return displayCalScreen(model);
     }
+
+
 
     //substract
 

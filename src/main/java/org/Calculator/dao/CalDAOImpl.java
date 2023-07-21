@@ -52,6 +52,27 @@ public class CalDAOImpl implements CalDAO {
         return currentInput.getInputStr().equals("");
     }
 
+
+    @Override
+    public void positiveNegativeInput(){
+        try {
+            Character firstChar = currentInput.getInputStr().charAt(0);
+            if (firstChar.equals('-')) {
+                // is a negative number -> change to positive
+                String[] tempArrStr = currentInput.getInputStr().split("-");
+                currentInput.setInputStr(tempArrStr[1]);
+                return;
+            }
+        }catch (StringIndexOutOfBoundsException e){ //encase there is not current input eg: just after an equals
+            currentInput.setInputStr("");
+        }catch (ArrayIndexOutOfBoundsException f){ // for just "-"
+            currentInput.setInputStr("");
+            return;
+        }
+        // is a positive number -> change to negative
+        currentInput.setInputStr("-" + currentInput.getInputStr());
+    }
+
     @Override
     public CurrentOutput getRunningTotal() {
         return runningTotal;
@@ -68,7 +89,7 @@ public class CalDAOImpl implements CalDAO {
         runningTotal.parseCurrentOutputToStr();
     }
 
-    public boolean isRunnungTotalVoid() {
+    public boolean isRunningTotalVoid() {
         return runningTotal.getOutputDou() == (double) 0;
     }
 

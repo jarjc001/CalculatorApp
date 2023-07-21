@@ -4,12 +4,21 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f7485c5f-2683-48f3-8393-60b75014208b" name="Changes" comment="done Adds button, works as intended &#10;need to reformat layout">
+    <list default="true" id="f7485c5f-2683-48f3-8393-60b75014208b" name="Changes" comment="fixed the equals then add bug">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/Calculator/controller/CalController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/Calculator/controller/CalController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/Calculator/dao/CalDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/Calculator/dao/CalDAO.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/Calculator/dao/CalDAOImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/Calculator/dao/CalDAOImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/Calculator/service/CalServiceBasicOperatorsImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/Calculator/service/CalServiceBasicOperatorsImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/Calculator/service/CalServiceInputOutput.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/Calculator/service/CalServiceInputOutput.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/Calculator/service/CalServiceInputOutputImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/Calculator/service/CalServiceInputOutputImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/Calculator.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/Calculator.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/Calculator/controller/CalController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/Calculator/controller/CalController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/Calculator/dao/CalDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/Calculator/dao/CalDAO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/Calculator/dao/CalDAOImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/Calculator/dao/CalDAOImpl.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/org/Calculator/service/CalServiceInputOutputImpl$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/Calculator/service/CalServiceInputOutputImpl$1.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/org/Calculator/service/CalServiceInputOutputImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/Calculator/service/CalServiceInputOutputImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/Calculator.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/Calculator.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -149,7 +158,14 @@
       <option name="project" value="LOCAL" />
       <updated>1689947546622</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="fixed the equals then add bug">
+      <created>1689951610590</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1689951610590</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -161,19 +177,20 @@
     <MESSAGE value="index html and css" />
     <MESSAGE value="got sort of start on number buttons&#10;Need to format them right" />
     <MESSAGE value="done equals and AC, all works as intended&#10;still need to format the layout to look nice" />
-    <option name="LAST_COMMIT_MESSAGE" value="done equals and AC, all works as intended&#10;still need to format the layout to look nice" />
+    <MESSAGE value="fixed the equals then add bug" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixed the equals then add bug" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/org/Calculator/service/CalServiceInputOutputImpl.java</url>
-          <line>70</line>
+          <line>73</line>
           <option name="timeStamp" value="12" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/org/Calculator/service/CalServiceInputOutputImpl.java</url>
-          <line>68</line>
+          <line>71</line>
           <option name="timeStamp" value="13" />
         </line-breakpoint>
       </breakpoints>

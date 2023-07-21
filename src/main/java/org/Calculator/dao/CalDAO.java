@@ -32,6 +32,10 @@ public interface CalDAO {
      */
     public boolean isCurrentInputVoid();
 
+    /**Swaps the input str to negative or positive
+     */
+    public void positiveNegativeInput();
+
     /**
      * get the running total as a double
      *

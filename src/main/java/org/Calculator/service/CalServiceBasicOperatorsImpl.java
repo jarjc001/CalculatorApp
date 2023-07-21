@@ -20,12 +20,7 @@ public class CalServiceBasicOperatorsImpl implements CalServiceBasicOperators {
 
     @Override
     public void minus() {
-        if(dao.isCurrentInputVoid()){
-            dao.addToCurrentInput("-");
-        }else{
-            dao.setNewOperator(Operator.SUBTRACT);
-        }
-
+        dao.setNewOperator(Operator.SUBTRACT);
     }
 
     @Override

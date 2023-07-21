@@ -31,6 +31,11 @@ public interface CalServiceInputOutput {
      */
     public void ACButton();
 
+    /**Swaps the current input negative or positive
+     *
+     */
+    public void positiveNegative();
+
 
     /**Will proccess the current
      *

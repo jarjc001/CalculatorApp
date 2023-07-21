@@ -172,9 +172,14 @@
 
     <!--        <button class="calculator__key calculator__key&#45;&#45;number">6</button>-->
 
-    <button class="calculator__key calculator__key--operator">-</button>
+<!--    <button class="calculator__key calculator__key&#45;&#45;operator">-</button>-->
+      <form th:action="operator" method="POST" >
+          <input type="hidden" name="operator" value="minus">
+          <button type="submit" class="calculator__key calculator__key--operator">-</button>
+      </form>
 
-    <!--        <button class="calculator__key calculator__key&#45;&#45;number">1</button>-->
+
+      <!--        <button class="calculator__key calculator__key&#45;&#45;number">1</button>-->
     <form th:action="numberButton" method="POST" >
       <input type="hidden" name="number" value=1>
       <button type="submit" class="calculator__key calculator__key--number">1</button>
@@ -193,7 +198,8 @@
     </form>
 
 <!--    <button class="calculator__key calculator__key&#45;&#45;operator">+</button>-->
-      <form th:action="add" method="POST" >
+      <form th:action="operator" method="POST" >
+          <input type="hidden" name="operator" value="plus">
           <button type="submit" class="calculator__key calculator__key--operator">+</button>
       </form>
 
@@ -209,7 +215,10 @@
       <button type="submit" class="calculator__key calculator__key--number">0</button>
     </form>
 
-    <button class="calculator__key calculator__key--operator">%</button>
+      <form th:action="changeSign" method="POST" >
+          <button type="submit" class="calculator__key calculator__key--operator">+/-</button>
+      </form>
+
 
 <!--    <button class="calculator__key calculator__key&#45;&#45;operator">=</button>-->
 
