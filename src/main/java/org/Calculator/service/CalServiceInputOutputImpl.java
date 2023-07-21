@@ -38,7 +38,8 @@ public class CalServiceInputOutputImpl implements CalServiceInputOutput{
     @Override
     public void ACButton() {
         if(dao.isCurrentInputVoid()){
-            dao.setRunningTotal(0);
+            dao.setRunningTotal(0);  // add a string thing to it too
+            dao.processRunningTotal();
         }
         dao.setCurrentInput("");
     }

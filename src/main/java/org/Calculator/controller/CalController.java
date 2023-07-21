@@ -21,37 +21,38 @@ public class CalController {
     private String numberTest = "";
 
     public String displayCalScreen(Model model){
-//        model.addAttribute("screen",inputOutput.getCalScreen());
-        model.addAttribute("screen",inputOutput.getCalScreen());        //testing
+        model.addAttribute("screen",inputOutput.getCalScreen());
+        System.out.println(inputOutput.getCalScreen());  //testing
+
         return "Calculator";
     }
 
     @GetMapping("Calculator")
-    public String showCalculator(Model model){
+    public String showCalculator(Model model) {
         return displayCalScreen(model);
     }
 
     @PostMapping("numberButton")
     public String displayCal(Model model, HttpServletRequest request){
         String number = request.getParameter("number");
-        numberTest += number;        //testing
+        //numberTest += number;        //testing
         inputOutput.addDigitToCurrentInput(number);
-        System.out.println(inputOutput.getCalScreen());
         return displayCalScreen(model);
     }
 
     @PostMapping("AC")
     public String AC(Model model){
-        numberTest = "";
+        inputOutput.ACButton();
         return displayCalScreen(model);
     }
 
 
+    @PostMapping("equals")
+    public String EqualsButton(Model model){
+        inputOutput.completeEquals();
+        return displayCalScreen(model);
 
-
-
-
-    //number
+    }
 
     //add
 

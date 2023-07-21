@@ -13,7 +13,7 @@ public class CurrentOutput {
 
     public CurrentOutput() {
         this.outputDou = (double) 0;
-        this.outputStr = "";
+        this.outputStr = "0.0";
     }
 
     public void setOutputStr(String outputStr) {

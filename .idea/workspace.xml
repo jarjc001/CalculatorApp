@@ -4,14 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f7485c5f-2683-48f3-8393-60b75014208b" name="Changes" comment="index html and css">
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/Calculator.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+    <list default="true" id="f7485c5f-2683-48f3-8393-60b75014208b" name="Changes" comment="got sort of start on number buttons&#10;Need to format them right">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/Calculator/controller/CalController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/Calculator/controller/CalController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/Calculator/dao/CalDAOImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/Calculator/dao/CalDAOImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/Calculator/dto/CurrentInput.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/Calculator/dto/CurrentInput.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/Calculator/dto/CurrentOutput.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/Calculator/dto/CurrentOutput.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/Calculator/service/CalServiceInputOutputImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/Calculator/service/CalServiceInputOutputImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/Calculator.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/Calculator.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/org/Calculator/controller/CalController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/Calculator/controller/CalController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/Calculator/dto/CurrentInput.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/Calculator/dto/CurrentInput.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -137,7 +137,14 @@
       <option name="project" value="LOCAL" />
       <updated>1688954012177</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="got sort of start on number buttons&#10;Need to format them right">
+      <created>1689946574873</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1689946574873</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -147,19 +154,20 @@
     <MESSAGE value="finished dao impl" />
     <MESSAGE value="finished basic service layer" />
     <MESSAGE value="index html and css" />
-    <option name="LAST_COMMIT_MESSAGE" value="index html and css" />
+    <MESSAGE value="got sort of start on number buttons&#10;Need to format them right" />
+    <option name="LAST_COMMIT_MESSAGE" value="got sort of start on number buttons&#10;Need to format them right" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/org/Calculator/service/CalServiceInputOutputImpl.java</url>
-          <line>61</line>
+          <line>62</line>
           <option name="timeStamp" value="12" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/org/Calculator/service/CalServiceInputOutputImpl.java</url>
-          <line>59</line>
+          <line>60</line>
           <option name="timeStamp" value="13" />
         </line-breakpoint>
       </breakpoints>
