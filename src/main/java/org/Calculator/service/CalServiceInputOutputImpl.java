@@ -32,6 +32,9 @@ public class CalServiceInputOutputImpl implements CalServiceInputOutput{
 
     @Override
     public void addDigitToCurrentInput(String nextDigit) {
+        if(dao.getCurrentInput().getInputStr().equals("ERROR")){
+            ACButton();
+        }
         dao.addToCurrentInput(nextDigit);
     }
 
@@ -47,11 +50,14 @@ public class CalServiceInputOutputImpl implements CalServiceInputOutput{
     @Override
     public void completeEquals() {
         try{
-            dao.processCurrentInput();
+            // to check if the is an error in input
+            dao.processCurrentInput();          //do if there is a running total
         } catch (CurrentInputError e) {
-            getErrorMessage();
-            /// fix so that it skips
+            if(dao.getRunningTotal().getOutputDou() == 0.0){
+                getErrorMessage();
+            }
             return;
+
         }
         double total = dao.getRunningTotal().getOutputDou();
         double input = dao.getCurrentInput().getInputDou();
