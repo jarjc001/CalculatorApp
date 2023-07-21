@@ -31,7 +31,7 @@ public class CalDAOImpl implements CalDAO {
         return currentInput;
     }
     @Override
-    public void addToCurrentInput(String newDigit) {
+    public void addToCurrentInput(String newDigit) {  // add something for null
         currentInput.setInputStr(currentInput.getInputStr()+newDigit);
     }
 

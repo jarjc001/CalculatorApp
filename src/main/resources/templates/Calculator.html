@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.thymeleaf.org ">
+<head>
+  <meta charset="UTF-8">
+  <title>Calculator</title>
+
+  <style>
+
+
+        .calculator {
+
+
+            border-radius: 10px;
+            box-shadow: 0 8px 50px -7px black;
+
+            margin-inline-start: auto;
+            margin-inline-end: auto;
+            margin-block-start: 2em;
+            max-inline-size: 22rem;
+
+            overflow: hidden;
+
+            background: #3A4655;
+
+        }
+
+        .calculator__output {
+            font-size: 2.5rem;
+            padding-block-start: 3rem;
+            padding-block-end: 0.5rem;
+            padding-inline-end: 1.0rem;
+            text-align: end;
+            color: #33ffbb;
+
+        }
+
+        .calculator__keys {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-gap: 1px;
+            background: #3C4857;
+
+
+
+
+        }
+
+        .calculator__key {
+            border: none;
+            padding-block-start: 1rem;
+            padding-block-end: 1rem;
+            padding-inline-start: 1.25rem;
+            padding-inline-end: 1.25rem;
+            font-size: 1.3rem;
+            color: #fff;
+
+
+        }
+
+
+
+        .calculator__key:focus {
+
+          box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.3) inset;
+          background: #33ffbb;
+
+          outline: none;
+
+        }
+
+
+        .calculator__key--operator {
+
+            background:#425062;
+
+        }
+
+        .calculator__key--operator:active {
+
+            background:  #677281;
+
+        }
+
+        .calculator__key--number {
+            background: #677281;
+        }
+        .calculator__key--number:active {
+
+            background:  #425062;
+
+        }
+
+
+
+        }
+
+
+
+
+
+
+
+
+
+
+    </style>
+
+
+</head>
+<body>
+
+<div class="calculator">
+
+  <div th:text="${screen}" class="calculator__output" >Screen</div>
+
+  <div class="calculator__keys">
+
+
+<!--    <button  href="AC"  class="calculator__key calculator__key&#45;&#45;operator">AC</button>-->
+
+    <form th:action="AC" method="POST" >
+      <button type="submit" class="calculator__key calculator__key--number">AC</button>
+    </form>
+
+
+    <!--        <button class="calculator__key calculator__key&#45;&#45;operator">AC</button>-->
+
+    <button class="calculator__key calculator__key--operator">x²</button>
+
+    <button class="calculator__key calculator__key--operator">√</button>
+
+    <button class="calculator__key calculator__key--operator">÷</button>
+
+<!--    <button href="numberButton" class="calculator__key calculator__key&#45;&#45;number" value=7>7</button>-->
+            <form th:action="numberButton" method="POST" >
+                <input type="hidden" name="number" value=7>
+                <button type="submit" class="calculator__key calculator__key--number">7</button>
+            </form>
+
+    <!--        <button action="numberButton" class="calculator__key calculator__key&#45;&#45;number" th:value=8>8</button>-->
+    <form th:action="numberButton" method="POST" >
+      <input type="hidden" name="number" value=8>
+      <button type="submit" class="calculator__key calculator__key--number">8</button>
+    </form>
+
+    <!--        <button class="calculator__key calculator__key&#45;&#45;number">9</button>-->
+    <form th:action="numberButton" method="POST" >
+      <input type="hidden" name="number" value=9>
+      <button type="submit" class="calculator__key calculator__key--number">9</button>
+    </form>
+
+    <button class="calculator__key calculator__key--operator">&times;</button>
+
+    <!--        <button class="calculator__key calculator__key&#45;&#45;number">4</button>-->
+    <form th:action="numberButton" method="POST" >
+      <input type="hidden" name="number" value=4>
+      <button type="submit" class="calculator__key calculator__key--number">4</button>
+    </form>
+
+
+    <form th:action="numberButton" method="POST" >
+      <input type="hidden" name="number" value=5>
+      <button type="submit" class="calculator__key calculator__key--number">5</button>
+    </form>
+
+    <form th:action="numberButton" method="POST">
+
+      <input type="hidden" name="number" value=6>
+      <button type="submit" class="calculator__key calculator__key--number">6</button>
+    </form>
+
+    <!--        <button class="calculator__key calculator__key&#45;&#45;number">6</button>-->
+
+    <button class="calculator__key calculator__key--operator">-</button>
+
+    <!--        <button class="calculator__key calculator__key&#45;&#45;number">1</button>-->
+    <form th:action="numberButton" method="POST" >
+      <input type="hidden" name="number" value=1>
+      <button type="submit" class="calculator__key calculator__key--number">1</button>
+    </form>
+
+    <!--        <button class="calculator__key calculator__key&#45;&#45;number">2</button>-->
+    <form th:action="numberButton" method="POST" >
+      <input type="hidden" name="number" value=2>
+      <button type="submit" class="calculator__key calculator__key--number">2</button>
+    </form>
+
+    <!--        <button class="calculator__key calculator__key&#45;&#45;number">3</button>-->
+    <form th:action="numberButton" method="POST" >
+      <input type="hidden" name="number" value=3>
+      <button type="submit" class="calculator__key calculator__key--number">3</button>
+    </form>
+
+    <button class="calculator__key calculator__key--operator">+</button>
+
+<!--    <button class="calculator__key calculator__key&#45;&#45;number">.</button>-->
+    <form th:action="numberButton" method="POST" >
+      <input type="hidden" name="number" value=.>
+      <button type="submit" class="calculator__key calculator__key--number">.</button>
+    </form>
+
+    <!--        <button class="calculator__key calculator__key&#45;&#45;number">0</button>-->
+    <form th:action="numberButton" method="POST" >
+      <input type="hidden" name="number" value=0>
+      <button type="submit" class="calculator__key calculator__key--number">0</button>
+    </form>
+
+    <button class="calculator__key calculator__key--operator">%</button>
+
+    <button class="calculator__key calculator__key--operator">=</button>
+
+
+  </div>
+
+</div>
+
+
+</body>
+</html>
