@@ -48,13 +48,20 @@ public class CalController {
 
 
     @PostMapping("equals")
-    public String EqualsButton(Model model){
+    public String equalsButton(Model model){
         inputOutput.completeEquals();
         return displayCalScreen(model);
 
     }
 
     //add
+
+    @PostMapping("add")
+    public String addButton(Model model){
+        inputOutput.completeEquals();
+        basicOp.plus();
+        return displayCalScreen(model);
+    }
 
     //substract
 

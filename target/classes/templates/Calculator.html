@@ -192,7 +192,10 @@
       <button type="submit" class="calculator__key calculator__key--number">3</button>
     </form>
 
-    <button class="calculator__key calculator__key--operator">+</button>
+<!--    <button class="calculator__key calculator__key&#45;&#45;operator">+</button>-->
+      <form th:action="add" method="POST" >
+          <button type="submit" class="calculator__key calculator__key--operator">+</button>
+      </form>
 
 <!--    <button class="calculator__key calculator__key&#45;&#45;number">.</button>-->
     <form th:action="numberButton" method="POST" >
