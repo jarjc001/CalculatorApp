@@ -17,10 +17,31 @@ public class CalServiceInputOutputImpl implements CalServiceInputOutput{
 
     @Override
     public String getCalScreen() {
+        String output;
+
         if(dao.isCurrentInputVoid()){
-            return dao.getRunningTotal().getOutputStr();
+            output = dao.getRunningTotal().getOutputStr();
+        }else{
+            output = dao.getCurrentInput().getInputStr();
         }
-        return dao.getCurrentInput().getInputStr();
+
+        //limit the digits on screen
+        if (output.length() >14){
+            String sciForm = "";
+            // if in scientific form
+            if(output.contains("E")){
+                int indexOfE = output.indexOf("E");
+                sciForm = output.substring(indexOfE);
+                return output.substring(0, 10) + sciForm ;
+            }
+
+            return output.substring(0, 14);
+
+        }
+        return output;
+
+
+       // return dao.getCurrentInput().getInputStr();
 
         //maybe do a check for floating point
         // and may be do an operator thing at the end?
@@ -47,6 +68,7 @@ public class CalServiceInputOutputImpl implements CalServiceInputOutput{
         if(dao.isCurrentInputVoid()){
             dao.setRunningTotal(0);  // add a string thing to it too
             dao.processRunningTotal();
+            dao.setNewOperator(Operator.NOTHING);
         }
         dao.setCurrentInput("");
     }

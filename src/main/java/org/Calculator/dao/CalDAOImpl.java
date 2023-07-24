@@ -89,10 +89,6 @@ public class CalDAOImpl implements CalDAO {
         runningTotal.parseCurrentOutputToStr();
     }
 
-    public boolean isRunningTotalVoid() {
-        return runningTotal.getOutputDou() == (double) 0;
-    }
-
     @Override
     public void setNewOperator(Operator name) {
         currentOperator = name;

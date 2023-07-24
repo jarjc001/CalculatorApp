@@ -4,15 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f7485c5f-2683-48f3-8393-60b75014208b" name="Changes" comment="fixed layout a bit">
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/calculator-icon.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/favicon_io.zip" afterDir="false" />
+    <list default="true" id="f7485c5f-2683-48f3-8393-60b75014208b" name="Changes" comment="added an icon">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/Calculator.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/Calculator.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/Calculator/controller/CalController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/Calculator/controller/CalController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/Calculator/dao/CalDAOImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/Calculator/dao/CalDAOImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/Calculator/service/CalServiceInputOutputImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/Calculator/service/CalServiceInputOutputImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/org/Calculator/service/CalServiceInputOutputImpl$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/Calculator/service/CalServiceInputOutputImpl$1.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/org/Calculator/service/CalServiceInputOutputImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/Calculator/service/CalServiceInputOutputImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/Calculator.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/Calculator.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -181,7 +180,14 @@
       <option name="project" value="LOCAL" />
       <updated>1690162022235</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="added an icon">
+      <created>1690163104680</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1690163104680</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -198,19 +204,20 @@
     <MESSAGE value="added change sign button&#10;chenged the minus op to be simplier" />
     <MESSAGE value="started divide&#10;need to fix divide by zero error - it's showing infinity&#10;need to tfix the float decimal point for some equations -&gt; limit the number of decimal points" />
     <MESSAGE value="fixed layout a bit" />
-    <option name="LAST_COMMIT_MESSAGE" value="fixed layout a bit" />
+    <MESSAGE value="added an icon" />
+    <option name="LAST_COMMIT_MESSAGE" value="added an icon" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/org/Calculator/service/CalServiceInputOutputImpl.java</url>
-          <line>77</line>
+          <line>99</line>
           <option name="timeStamp" value="12" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/org/Calculator/service/CalServiceInputOutputImpl.java</url>
-          <line>75</line>
+          <line>97</line>
           <option name="timeStamp" value="13" />
         </line-breakpoint>
       </breakpoints>
