@@ -21,6 +21,10 @@ public class CalServiceInputOutputImpl implements CalServiceInputOutput{
             return dao.getRunningTotal().getOutputStr();
         }
         return dao.getCurrentInput().getInputStr();
+
+        //maybe do a check for floating point
+        // and may be do an operator thing at the end?
+        // but keep it sepaerte from dao?
     }
 
     @Override

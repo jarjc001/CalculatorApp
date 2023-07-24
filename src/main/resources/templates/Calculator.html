@@ -38,13 +38,14 @@
         .calculator__keys {
             display: grid;
             grid-template-columns: repeat(4, 1fr);
-            grid-gap: 1px;
+            grid-gap: 0px;
             background: #3C4857;
 
 
 
 
         }
+
 
         .calculator__key {
             border: none;
@@ -54,6 +55,9 @@
             padding-inline-end: 1.25rem;
             font-size: 1.3rem;
             color: #fff;
+            text-align: center;
+            width: 100%
+
 
 
         }
@@ -76,6 +80,12 @@
 
         }
 
+        .calculator__key--operator:hover {
+
+            background-color:#3A4655;
+
+        }
+
         .calculator__key--operator:active {
 
             background:  #677281;
@@ -88,6 +98,11 @@
         .calculator__key--number:active {
 
             background:  #425062;
+
+        }
+        .calculator__key--number:hover {
+
+            background-color:#3A4655;
 
         }
 
@@ -120,16 +135,26 @@
 
         <!--    <button  href="AC"  class="calculator__key calculator__key&#45;&#45;operator">AC</button>-->
 
-        <form th:action="AC" method="POST">
+        <form th:action="AC" method="POST" >
             <button type="submit" class="calculator__key calculator__key--operator">AC</button>
         </form>
 
 
         <!--        <button class="calculator__key calculator__key&#45;&#45;operator">AC</button>-->
 
-        <button class="calculator__key calculator__key--operator">x²</button>
+<!--        <button class="calculator__key calculator__key&#45;&#45;operator">x²</button>-->
 
-        <button class="calculator__key calculator__key--operator">√</button>
+        <form th:action="AC" method="POST">
+            <button type="submit" class="calculator__key calculator__key--operator">x²</button>
+        </form>
+
+<!--        <button class="calculator__key calculator__key&#45;&#45;operator">√</button>-->
+
+        <form th:action="AC" method="POST">
+            <button type="submit" class="calculator__key calculator__key--operator">√</button>
+        </form>
+
+
 
 <!--        <button class="calculator__key calculator__key&#45;&#45;operator">÷</button>-->
 
