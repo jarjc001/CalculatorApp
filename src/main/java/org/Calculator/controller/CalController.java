@@ -22,7 +22,7 @@ public class CalController {
 
     public String displayCalScreen(Model model){
         model.addAttribute("screen",inputOutput.getCalScreen());
-        System.out.println(inputOutput.getCalScreen());  //testing
+        System.out.println("Screen: "+inputOutput.getCalScreen());  //testing
 
         return "Calculator";
     }

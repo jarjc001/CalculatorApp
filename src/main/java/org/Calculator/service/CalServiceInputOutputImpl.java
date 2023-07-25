@@ -81,11 +81,11 @@ public class CalServiceInputOutputImpl implements CalServiceInputOutput{
     @Override
     public void completeEquals() {
         try{
-            // to check if the is an error in input
+            // to check if there is an error in input
             dao.processCurrentInput();          //do if there is a running total
         } catch (CurrentInputError e) {
-            if(dao.getRunningTotal().getOutputDou() == 0.0){
-                getErrorMessage();
+            if(!dao.getCurrentInput().getInputStr().equals("")){        // this is for using an op button after equals with no current input
+                getErrorMessage();      //something wrong  with input typed
             }
             return;
 
@@ -95,9 +95,9 @@ public class CalServiceInputOutputImpl implements CalServiceInputOutput{
 
         switch (dao.getCurrentOperator()) {
             case ADD -> dao.setRunningTotal(total + input);
-            case SUBTRACT -> dao.setRunningTotal(total - input);        // add the minius speacal case
+            case SUBTRACT -> dao.setRunningTotal(total - input);
             case MULTIPLY -> dao.setRunningTotal(total * input);
-            case DIVIDE -> dao.setRunningTotal(total / input);          //add the error speacal case
+            case DIVIDE -> dao.setRunningTotal(total / input);
             case NOTHING -> dao.setRunningTotal(input);         //maybe wrong
         }
 
