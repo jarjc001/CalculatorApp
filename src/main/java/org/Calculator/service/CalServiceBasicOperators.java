@@ -22,9 +22,15 @@ public interface CalServiceBasicOperators {
     public void multiply();
 
     /**Sets the new operator as divide,
-     * will give an error if divide by zero
+     * will give infinity for divide zero
      */
     public void divide();
+
+    /**Will square the current number on screen:
+     * either running total or current input
+     * Only works if current operator is nothing
+     */
+    public void square();
 
 
 
