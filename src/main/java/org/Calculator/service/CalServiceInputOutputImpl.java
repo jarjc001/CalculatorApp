@@ -35,6 +35,7 @@ public class CalServiceInputOutputImpl implements CalServiceInputOutput{
                 return output.substring(0, 10) + sciForm ;
             }
 
+
             return output.substring(0, 14);
 
         }
