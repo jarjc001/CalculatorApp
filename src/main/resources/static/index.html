@@ -32,7 +32,7 @@
         .calculator__output {
             font-size: 2.5rem;
             padding-block-start: 3rem;
-            padding-block-end: 0.5rem;
+            padding-block-end: 03.4rem;
             padding-inline-end: 1.0rem;
             text-align: end;
             color: #33ffbb;
@@ -41,7 +41,7 @@
 
         .calculator__keys {
             display: grid;
-            grid-template-columns: repeat(4, 1fr);
+            grid-template-columns: repeat(1, 1fr);
             grid-gap: 0px;
             background: #3C4857;
 
@@ -53,11 +53,11 @@
 
         .calculator__key {
             border: none;
-            padding-block-start: 1rem;
-            padding-block-end: 1rem;
+            padding-block-start: 6.4rem;
+            padding-block-end: 6.4rem;
             padding-inline-start: 1.25rem;
             padding-inline-end: 1.25rem;
-            font-size: 1.3rem;
+            font-size: 4rem;
             color: #fff;
             text-align: center;
             width: 100%
@@ -96,19 +96,7 @@
 
         }
 
-        .calculator__key--number {
-            background: #677281;
-        }
-        .calculator__key--number:active {
 
-            background:  #425062;
-
-        }
-        .calculator__key--number:hover {
-
-            background-color:#3A4655;
-
-        }
 
 
 
@@ -128,114 +116,12 @@
 
 <div class="calculator">
 
-    <div class="calculator__output" th:text="${screen}">Screen</div>
+    <div class="calculator__output" th:text="${screen}"> </div>
 
-    <div class="calculator__keys">
-
-
-        <form method="POST" th:action="AC">
-            <button class="calculator__key calculator__key--operator" type="submit">AC</button>
+    <div class="calculator__keys calculator__key--operator">
+        <form action="Calculator" >
+            <button type="submit" class="calculator__key calculator__key--operator">AC</button>
         </form>
-
-        <form method="POST" th:action="power">
-            <input name="operator" type="hidden" value="square">
-            <button class="calculator__key calculator__key--operator" type="submit">x²</button>
-        </form>
-
-
-        <form method="POST" th:action="power">
-            <input name="operator" type="hidden" value="sqrt">
-            <button class="calculator__key calculator__key--operator" type="submit">√</button>
-        </form>
-
-        <form method="POST" th:action="operator">
-            <input name="operator" type="hidden" value="divide">
-            <button class="calculator__key calculator__key--operator" type="submit">÷</button>
-        </form>
-
-        <form method="POST" th:action="numberButton">
-            <input name="number" type="hidden" value=7>
-            <button class="calculator__key calculator__key--number" type="submit">7</button>
-        </form>
-
-        <form method="POST" th:action="numberButton">
-            <input name="number" type="hidden" value=8>
-            <button class="calculator__key calculator__key--number" type="submit">8</button>
-        </form>
-
-        <form method="POST" th:action="numberButton">
-            <input name="number" type="hidden" value=9>
-            <button class="calculator__key calculator__key--number" type="submit">9</button>
-        </form>
-
-        <form method="POST" th:action="operator">
-            <input name="operator" type="hidden" value="multiply">
-            <button class="calculator__key calculator__key--operator" type="submit">&times;</button>
-        </form>
-
-        <form method="POST" th:action="numberButton">
-            <input name="number" type="hidden" value=4>
-            <button class="calculator__key calculator__key--number" type="submit">4</button>
-        </form>
-
-
-        <form method="POST" th:action="numberButton">
-            <input name="number" type="hidden" value=5>
-            <button class="calculator__key calculator__key--number" type="submit">5</button>
-        </form>
-
-        <form method="POST" th:action="numberButton">
-
-            <input name="number" type="hidden" value=6>
-            <button class="calculator__key calculator__key--number" type="submit">6</button>
-        </form>
-
-
-        <form method="POST" th:action="operator">
-            <input name="operator" type="hidden" value="minus">
-            <button class="calculator__key calculator__key--operator" type="submit">-</button>
-        </form>
-
-
-        <form method="POST" th:action="numberButton">
-            <input name="number" type="hidden" value=1>
-            <button class="calculator__key calculator__key--number" type="submit">1</button>
-        </form>
-
-        <form method="POST" th:action="numberButton">
-            <input name="number" type="hidden" value=2>
-            <button class="calculator__key calculator__key--number" type="submit">2</button>
-        </form>
-
-        <form method="POST" th:action="numberButton">
-            <input name="number" type="hidden" value=3>
-            <button class="calculator__key calculator__key--number" type="submit">3</button>
-        </form>
-
-        <form method="POST" th:action="operator">
-            <input name="operator" type="hidden" value="plus">
-            <button class="calculator__key calculator__key--operator" type="submit">+</button>
-        </form>
-
-        <form method="POST" th:action="numberButton">
-            <input name="number" type="hidden" value=.>
-            <button class="calculator__key calculator__key--number" type="submit">.</button>
-        </form>
-
-        <form method="POST" th:action="numberButton">
-            <input name="number" type="hidden" value=0>
-            <button class="calculator__key calculator__key--number" type="submit">0</button>
-        </form>
-
-        <form method="POST" th:action="changeSign">
-            <button class="calculator__key calculator__key--operator" type="submit">+/-</button>
-        </form>
-
-
-        <form method="POST" th:action="equals">
-            <button class="calculator__key calculator__key--operator" type="submit">=</button>
-        </form>
-
 
     </div>
 

@@ -4,17 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f7485c5f-2683-48f3-8393-60b75014208b" name="Changes" comment="basic square done">
+    <list default="true" id="f7485c5f-2683-48f3-8393-60b75014208b" name="Changes" comment="start finishing touches">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/Calculator/controller/CalController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/Calculator/controller/CalController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/Calculator/service/CalServiceBasicOperators.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/Calculator/service/CalServiceBasicOperators.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/Calculator/service/CalServiceBasicOperatorsImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/Calculator/service/CalServiceBasicOperatorsImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/templates/Calculator.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/Calculator.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/Calculator/controller/CalController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/Calculator/controller/CalController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/Calculator/dao/CalDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/Calculator/dao/CalDAO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/Calculator/dao/CalDAOImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/Calculator/dao/CalDAOImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/Calculator/service/CalServiceBasicOperatorsImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/Calculator/service/CalServiceBasicOperatorsImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/Calculator/service/CalServiceInputOutput.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/Calculator/service/CalServiceInputOutput.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/templates/Calculator.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/Calculator.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -219,7 +213,21 @@
       <option name="project" value="LOCAL" />
       <updated>1692404275557</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="basic sqrt done">
+      <created>1692405105076</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1692405105076</updated>
+    </task>
+    <task id="LOCAL-00019" summary="start finishing touches">
+      <created>1692405366496</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1692405366496</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -252,7 +260,9 @@
     <MESSAGE value="added a max digit limit on screen to 14 digit, there is an error in typing" />
     <MESSAGE value="fixed error screen not working for wrong input" />
     <MESSAGE value="basic square done" />
-    <option name="LAST_COMMIT_MESSAGE" value="basic square done" />
+    <MESSAGE value="basic sqrt done" />
+    <MESSAGE value="start finishing touches" />
+    <option name="LAST_COMMIT_MESSAGE" value="start finishing touches" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

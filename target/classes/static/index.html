@@ -1,12 +1,15 @@
 <!DOCTYPE html>
-<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<html lang="en" xmlns:th="http://www.thymeleaf.org" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.thymeleaf.org ">
 <head>
     <meta charset="UTF-8">
     <title>Calculator</title>
+    <link href="/apple-touch-icon.png" rel="apple-touch-icon" sizes="180x180">
+    <link href="/favicon-32x32.png" rel="icon" sizes="32x32" type="image/png">
+    <link href="/favicon-16x16.png" rel="icon" sizes="16x16" type="image/png">
+    <link href="/site.webmanifest" rel="manifest">
 
     <style>
-
-<!--    // do a power button to transport to cal-->
 
 
         .calculator {
@@ -29,7 +32,7 @@
         .calculator__output {
             font-size: 2.5rem;
             padding-block-start: 3rem;
-            padding-block-end: 0.5rem;
+            padding-block-end: 03.4rem;
             padding-inline-end: 1.0rem;
             text-align: end;
             color: #33ffbb;
@@ -38,8 +41,8 @@
 
         .calculator__keys {
             display: grid;
-            grid-template-columns: repeat(4, 1fr);
-            grid-gap: 1px;
+            grid-template-columns: repeat(1, 1fr);
+            grid-gap: 0px;
             background: #3C4857;
 
 
@@ -47,14 +50,18 @@
 
         }
 
+
         .calculator__key {
             border: none;
-            padding-block-start: 1rem;
-            padding-block-end: 1rem;
+            padding-block-start: 6.4rem;
+            padding-block-end: 6.4rem;
             padding-inline-start: 1.25rem;
             padding-inline-end: 1.25rem;
-            font-size: 1.3rem;
+            font-size: 4rem;
             color: #fff;
+            text-align: center;
+            width: 100%
+
 
 
         }
@@ -77,25 +84,23 @@
 
         }
 
+        .calculator__key--operator:hover {
+
+            background-color:#3A4655;
+
+        }
+
         .calculator__key--operator:active {
 
             background:  #677281;
 
         }
 
-        .calculator__key--number {
-            background: #677281;
-        }
-        .calculator__key--number:active {
 
-            background:  #425062;
-
-        }
 
 
 
         }
-
 
 
 
@@ -111,49 +116,20 @@
 
 <div class="calculator">
 
-    <div class="calculator__output">0</div>
+    <div class="calculator__output" th:text="${screen}"> </div>
 
-    <div class="calculator__keys">
+    <div class="calculator__keys calculator__key--operator">
+        <form action="Calculator" >
+            <button type="submit" class="calculator__key calculator__key--operator">AC</button>
+        </form>
 
-        <button class="calculator__key calculator__key--operator">AC</button>
+       
 
-        <button class="calculator__key calculator__key--operator">x²</button>
 
-        <button class="calculator__key calculator__key--operator">√</button>
 
-        <button class="calculator__key calculator__key--operator">÷</button>
+<!--            <button class="calculator__key calculator__key&#45;&#45;operator" href="Calculator" >AC</button>-->
 
-        <button href="login" class="calculator__key calculator__key--number">7</button>
 
-        <button class="calculator__key calculator__key--number">8</button>
-
-        <button class="calculator__key calculator__key--number">9</button>
-
-        <button class="calculator__key calculator__key--operator">&times;</button>
-
-        <button class="calculator__key calculator__key--number">4</button>
-
-        <button class="calculator__key calculator__key--number">5</button>
-
-        <button class="calculator__key calculator__key--number">6</button>
-
-        <button class="calculator__key calculator__key--operator">-</button>
-
-        <button class="calculator__key calculator__key--number">1</button>
-
-        <button class="calculator__key calculator__key--number">2</button>
-
-        <button class="calculator__key calculator__key--number">3</button>
-
-        <button class="calculator__key calculator__key--operator">+</button>
-
-        <button class="calculator__key calculator__key--number">.</button>
-
-        <button class="calculator__key calculator__key--number">0</button>
-
-        <button class="calculator__key calculator__key--operator">%</button>
-
-        <button class="calculator__key calculator__key--operator">=</button>
 
 
     </div>
