@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f7485c5f-2683-48f3-8393-60b75014208b" name="Changes" comment="javaDoc">
-      <change beforePath="$PROJECT_DIR$/target/classes/static/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/index.html" afterDir="false" />
-    </list>
+    <list default="true" id="f7485c5f-2683-48f3-8393-60b75014208b" name="Changes" comment="readme" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -237,7 +235,21 @@
       <option name="project" value="LOCAL" />
       <updated>1692407252523</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="javaDoc">
+      <created>1692408067998</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1692408067998</updated>
+    </task>
+    <task id="LOCAL-00023" summary="readme">
+      <created>1692408092516</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1692408092516</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -274,14 +286,15 @@
     <MESSAGE value="start finishing touches" />
     <MESSAGE value="finish with index html" />
     <MESSAGE value="javaDoc" />
-    <option name="LAST_COMMIT_MESSAGE" value="javaDoc" />
+    <MESSAGE value="readme" />
+    <option name="LAST_COMMIT_MESSAGE" value="readme" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/main/java/org/Calculator/service/CalServiceInputOutputImpl.java</url>
-          <line>81</line>
+          <line>82</line>
           <properties class="org.Calculator.service.CalServiceInputOutputImpl" method="processCurrentInputSuccess">
             <option name="EMULATED" value="true" />
             <option name="WATCH_EXIT" value="false" />
