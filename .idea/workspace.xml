@@ -4,7 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f7485c5f-2683-48f3-8393-60b75014208b" name="Changes" comment="readme" />
+    <list default="true" id="f7485c5f-2683-48f3-8393-60b75014208b" name="Changes" comment="readme">
+      <change afterPath="$PROJECT_DIR$/Flow Chart.docx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/~$ow Chart.docx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -263,7 +267,14 @@
       <option name="project" value="LOCAL" />
       <updated>1692408490154</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="readme">
+      <created>1692408563753</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1692408563753</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -302,20 +313,5 @@
     <MESSAGE value="javaDoc" />
     <MESSAGE value="readme" />
     <option name="LAST_COMMIT_MESSAGE" value="readme" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/src/main/java/org/Calculator/service/CalServiceInputOutputImpl.java</url>
-          <line>82</line>
-          <properties class="org.Calculator.service.CalServiceInputOutputImpl" method="processCurrentInputSuccess">
-            <option name="EMULATED" value="true" />
-            <option name="WATCH_EXIT" value="false" />
-          </properties>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>
