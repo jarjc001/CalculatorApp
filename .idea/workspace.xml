@@ -4,11 +4,19 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f7485c5f-2683-48f3-8393-60b75014208b" name="Changes" comment="added a max digit limit on screen to 14 digit, there is an error in typing">
+    <list default="true" id="f7485c5f-2683-48f3-8393-60b75014208b" name="Changes" comment="fixed error screen not working for wrong input">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/Calculator/controller/CalController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/Calculator/controller/CalController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/Calculator/dao/CalDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/Calculator/dao/CalDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/Calculator/dao/CalDAOImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/Calculator/dao/CalDAOImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/Calculator/dto/CurrentInput.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/Calculator/dto/CurrentInput.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/Calculator/service/CalServiceBasicOperators.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/Calculator/service/CalServiceBasicOperators.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/Calculator/service/CalServiceBasicOperatorsImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/Calculator/service/CalServiceBasicOperatorsImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/Calculator/service/CalServiceInputOutput.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/Calculator/service/CalServiceInputOutput.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/Calculator/service/CalServiceInputOutputImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/Calculator/service/CalServiceInputOutputImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/Calculator/service/CalServiceBasicOperators.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/Calculator/service/CalServiceBasicOperators.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/Calculator/controller/CalController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/Calculator/controller/CalController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/Calculator/service/CalServiceInputOutputImpl$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/Calculator/service/CalServiceInputOutputImpl$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/Calculator/service/CalServiceInputOutputImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/Calculator/service/CalServiceInputOutputImpl.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -198,8 +206,26 @@
       <option name="project" value="LOCAL" />
       <updated>1690325490477</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="fixed error screen not working for wrong input">
+      <created>1690327259523</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1690327259523</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
@@ -218,6 +244,40 @@
     <MESSAGE value="added an icon" />
     <MESSAGE value="added a max digit limit on screen to 14 digit" />
     <MESSAGE value="added a max digit limit on screen to 14 digit, there is an error in typing" />
-    <option name="LAST_COMMIT_MESSAGE" value="added a max digit limit on screen to 14 digit, there is an error in typing" />
+    <MESSAGE value="fixed error screen not working for wrong input" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixed error screen not working for wrong input" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/main/java/org/Calculator/service/CalServiceInputOutputImpl.java</url>
+          <line>81</line>
+          <properties class="org.Calculator.service.CalServiceInputOutputImpl" method="processCurrentInputSuccess">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/main/java/org/Calculator/service/CalServiceBasicOperatorsImpl.java</url>
+          <line>37</line>
+          <properties class="org.Calculator.service.CalServiceBasicOperatorsImpl" method="specialOpCheck">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/main/java/org/Calculator/service/CalServiceBasicOperatorsImpl.java</url>
+          <line>52</line>
+          <properties class="org.Calculator.service.CalServiceBasicOperatorsImpl" method="finishSpecialOp">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

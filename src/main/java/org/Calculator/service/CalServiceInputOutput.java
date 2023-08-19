@@ -36,6 +36,12 @@ public interface CalServiceInputOutput {
      */
     public void positiveNegative();
 
+    /**Will process the current input.
+     * Will cause an error message to appear if it can't process properly on the cal screen
+     * @return true if no error happens, otherwise will return false
+     */
+    public boolean processCurrentInputSuccess();
+
 
     /**Will proccess the current
      *

@@ -79,17 +79,27 @@ public class CalServiceInputOutputImpl implements CalServiceInputOutput{
     }
 
     @Override
-    public void completeEquals() {
+    public boolean processCurrentInputSuccess(){
         try{
             // to check if there is an error in input
             dao.processCurrentInput();          //do if there is a running total
+            return true;
         } catch (CurrentInputError e) {
             if(!dao.getCurrentInput().getInputStr().equals("")){        // this is for using an op button after equals with no current input
                 getErrorMessage();      //something wrong  with input typed
             }
-            return;
+            return false;
 
         }
+
+    }
+
+    @Override
+    public void completeEquals() {
+
+        // to check if there is an error in input
+        if(!processCurrentInputSuccess()){return;}
+
         double total = dao.getRunningTotal().getOutputDou();
         double input = dao.getCurrentInput().getInputDou();
 

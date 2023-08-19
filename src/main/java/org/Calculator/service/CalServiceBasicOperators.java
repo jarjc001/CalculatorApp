@@ -28,7 +28,7 @@ public interface CalServiceBasicOperators {
 
     /**Will square the current number on screen:
      * either running total or current input
-     * Only works if current operator is nothing
+     * then set the current input as the square number
      */
     public void square();
 

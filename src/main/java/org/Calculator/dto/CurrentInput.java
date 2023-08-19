@@ -35,7 +35,7 @@ public class CurrentInput {
     }
 
     public void parseCurrentInputToDouble() throws CurrentInputError {
-        try{
+        try {
             this.inputDou = Double.parseDouble(this.inputStr);
         } catch (NumberFormatException e) {
             throw new CurrentInputError("Input not valid");

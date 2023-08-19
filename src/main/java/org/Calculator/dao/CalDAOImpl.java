@@ -46,6 +46,12 @@ public class CalDAOImpl implements CalDAO {
         currentInput.setInputStr("");
     }
 
+    @Override
+    public void processCurrentInputToStr(Double currentNumber){
+        String inputStr = currentNumber.toString();
+        currentInput.setInputStr(inputStr);
+    }
+
 
     @Override
     public boolean isCurrentInputVoid() {

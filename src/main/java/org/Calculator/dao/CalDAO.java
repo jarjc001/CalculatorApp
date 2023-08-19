@@ -22,6 +22,12 @@ public interface CalDAO {
      */
     public void processCurrentInput() throws CurrentInputError;
 
+    /**
+     * Turn a double into the current input str
+     * @param currentNumber the double to be set as the current input str
+     */
+    public void processCurrentInputToStr(Double currentNumber);
+
     /**Gets the current input as a double
      * @return current input
      */

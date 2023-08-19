@@ -78,15 +78,13 @@ public class CalController {
     }
 
 
+    @PostMapping("square")
+    public String square(Model model){
 
-    //substract
+        basicOp.square();
 
-    //mutiple
-
-    // divide
-
-
-    //equals
+        return displayCalScreen(model);
+    }
 
 
     //square
