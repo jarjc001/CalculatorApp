@@ -148,13 +148,15 @@
 
 <!--        <button class="calculator__key calculator__key&#45;&#45;operator">x²</button>-->
 
-        <form th:action="AC" method="POST">
+        <form th:action="power" method="POST">
+            <input type="hidden" name="operator" value="square">
             <button type="submit" class="calculator__key calculator__key--operator">x²</button>
         </form>
 
 <!--        <button class="calculator__key calculator__key&#45;&#45;operator">√</button>-->
 
-        <form th:action="AC" method="POST">
+        <form th:action="power" method="POST">
+            <input type="hidden" name="operator" value="sqrt">
             <button type="submit" class="calculator__key calculator__key--operator">√</button>
         </form>
 

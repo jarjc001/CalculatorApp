@@ -78,10 +78,14 @@ public class CalController {
     }
 
 
-    @PostMapping("square")
-    public String square(Model model){
+    @PostMapping("power")
+    public String square(Model model, HttpServletRequest request){
+        String operator = request.getParameter("operator");
+        switch (operator){
+            case "square" -> basicOp.square();
+            case "sqrt" -> basicOp.sqrt();
+        }
 
-        basicOp.square();
 
         return displayCalScreen(model);
     }

@@ -34,7 +34,7 @@ public class CalServiceBasicOperatorsImpl implements CalServiceBasicOperators {
         dao.setNewOperator(Operator.DIVIDE);
     }
 
-
+    @Override
     public Double specialOpCheck() {
 
         if (dao.isCurrentInputVoid()) {
@@ -50,14 +50,9 @@ public class CalServiceBasicOperatorsImpl implements CalServiceBasicOperators {
 
     }
 
-    public void finishSpecialOp(double currentNumber){
-
-    }
-
 
     @Override
     public void square() {
-        //squares the current number on screen
 
         //  check if input is null or not
         // if current input is void, use running total -> set running total as zero
@@ -75,6 +70,33 @@ public class CalServiceBasicOperatorsImpl implements CalServiceBasicOperators {
         dao.processCurrentInputToStr(currentNumber);
     }
 
+    @Override
+    public void sqrt() {
+        //sqrt the current number on screen
 
-    //sqrt add the 0> error for it
+        //  check if input is null or not
+        // if current input is void, use running total -> set running total as zero
+        // if not use current output
+        Double currentNumber = specialOpCheck();
+
+        // if there was an error in getting the current number
+        if(currentNumber == null){
+            return;
+        }
+
+        //checks if the number is less than zero -> don't do imaginary numbers
+        // will set the running total back to itself again
+        if(currentNumber < 0.0){
+            inputOutput.getErrorMessage();
+            dao.setRunningTotal(currentNumber);
+            return;
+        }
+
+        currentNumber = Math.pow(currentNumber,0.5);
+
+        //then set as current input
+        dao.processCurrentInputToStr(currentNumber);
+    }
+
+
 }
