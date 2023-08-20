@@ -4,6 +4,7 @@ import org.Calculator.dto.CurrentInput;
 import org.Calculator.dto.CurrentInputError;
 import org.Calculator.dto.CurrentOutput;
 import org.Calculator.dto.Operator;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 
 @Repository
@@ -15,6 +16,7 @@ public class CalDAOImpl implements CalDAO {
      * The running total, this will be show when the '=' is pressed or before any current input is inputted
      */
     private CurrentOutput runningTotal = new CurrentOutput();
+
     /**
      * The current input, this is a string until a normal operator is chosen, then will be parsed into a double
      */

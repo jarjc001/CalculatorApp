@@ -5,9 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f7485c5f-2683-48f3-8393-60b75014208b" name="Changes" comment="readme">
-      <change afterPath="$PROJECT_DIR$/Flow Chart.docx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/~$ow Chart.docx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/Calculator/TestApplicationConfiguration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/Calculator/TestDao.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/Calculator/dao/CalDAOImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/Calculator/dao/CalDAOImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/Calculator/service/CalServiceInputOutputImpl$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/Calculator/service/CalServiceInputOutputImpl$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/Calculator/service/CalServiceInputOutputImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/Calculator/service/CalServiceInputOutputImpl.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -19,8 +23,8 @@
       <list>
         <option value="Enum" />
         <option value="Interface" />
-        <option value="Class" />
         <option value="HTML File" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -55,7 +59,8 @@
     &quot;last_opened_file_path&quot;: &quot;C:/Users/theon/Documents/Important_fouders/Java/Calculator/src/main/resources&quot;,
     &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
   }
 }</component>
   <component name="RecentsManager">
@@ -63,7 +68,7 @@
       <recent name="C:\Users\theon\Documents\Important_fouders\Java\Calculator\src\main\resources" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="JUnit.TestDao">
     <configuration name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="org.Calculator.App" />
       <module name="Calculator" />
@@ -77,9 +82,42 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="TestDao" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Calculator" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.Calculator.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.Calculator" />
+      <option name="MAIN_CLASS_NAME" value="org.Calculator.TestDao" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestDao.testAddDigit" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Calculator" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.Calculator.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.Calculator" />
+      <option name="MAIN_CLASS_NAME" value="org.Calculator.TestDao" />
+      <option name="METHOD_NAME" value="testAddDigit" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.TestDao" />
         <item itemvalue="Application.App" />
+        <item itemvalue="JUnit.TestDao.testAddDigit" />
       </list>
     </recent_temporary>
   </component>
